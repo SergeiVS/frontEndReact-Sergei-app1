@@ -1,13 +1,40 @@
+import { testUser } from "../../components/card/testUser";
 import "./styles.css";
+import avatar from "../../assets/Homer_Simpson_2006.png";
 
-const tesrUser = {
-  firstName: "Homer",
-  lastName: "Simpson",
-  imageSrc:
-    "https://a1cf74336522e87f135f-2f21ace9a6cf0052456644b80fa06d4f.ssl.cf2.rackcdn.com/images/characters/large/2800/Homer-Simpson.The-Simpsons.webp",
-occupation: "Safty inspector"
+const name = (
+  <p className="user-data">
+    {testUser.firstName} {testUser.lastName}
+  </p>
+);
+
+const getHobbiesListening = () => {
+  const hobbies = testUser.hobbies;
+  const liElements = hobbies.map((hobby) => (
+    <li className="user-data">{hobby}</li>
+  ));
+  return <ul className="listening">{liElements}</ul>;
 };
 
-function Card() {}
-
+function Card() {
+  return (
+    <div className="card">
+      <div className="avatar-container">
+        <img className="avatar" src={avatar} alt="avatar" />
+      </div>
+      <div className="cards-block">
+        <p className="title">Name:</p>
+        {name}
+      </div>
+      <div className="cards-block">
+        <p className="title">Oportunity:</p>
+        <p className="user-data">{testUser.oportunity}</p>
+      </div>
+      <div className="cards-block">
+        <p className="title">Hobbies:</p>
+        {getHobbiesListening()}
+      </div>
+    </div>
+  );
+}
 export default Card;
