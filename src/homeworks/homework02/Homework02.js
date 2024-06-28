@@ -1,5 +1,5 @@
-import Card from "../../components/card/Card";
-import "./styles.css"
+import Card from "../../components/Card/Card";
+import "./styles.css";
 function Homework02() {
   return (
     <div className="homework02">

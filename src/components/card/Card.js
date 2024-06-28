@@ -1,4 +1,4 @@
-import { testUser } from "../../components/card/testUser";
+import { testUser } from "../../components/Card/testUser";
 import "./styles.css";
 import avatar from "../../assets/Homer_Simpson_2006.png";
 
@@ -27,8 +27,8 @@ function Card() {
         {name}
       </div>
       <div className="cards-block">
-        <p className="title">Oportunity:</p>
-        <p className="user-data">{testUser.oportunity}</p>
+        <p className="title">Occupation:</p>
+        <p className="user-data">{testUser.occupation}</p>
       </div>
       <div className="cards-block">
         <p className="title">Hobbies:</p>

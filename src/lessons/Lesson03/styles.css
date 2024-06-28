@@ -1,6 +1,7 @@
-.homework02 {
+.lesson03-wrapper {
   display: flex;
   flex-wrap: wrap;
+  flex: 1;
+  padding: 80px;
   gap: 20px;
-  padding: 30px;
 }
