@@ -6,13 +6,25 @@
   border-radius: 4px;
   font-size: 20px;
   font-weight: 600;
-  color: rgba(255, 255, 255, 1);
 }
 
 .main-button {
-  background-color: rgba(31, 39, 245, 1);;
+  background-color: rgba(31, 39, 245, 1);
+  color: rgba(255, 255, 255, 1);
 }
 
 .delete-button {
   background-color: rgb(223, 66, 14);
+}
+
+.like-button {
+  background-color: rgba(31, 39, 245, 1);
+  background-image: url(../../assets/Facebook_Thumb_icon.svg);
+  background-size: contain;
+}
+
+.dislike-button {
+  background-color: rgba(31, 39, 245, 1);
+  background-image: url(../../assets/64px-Not_facebook_not_like_thumbs_down.png);
+  background-size: contain;
 }

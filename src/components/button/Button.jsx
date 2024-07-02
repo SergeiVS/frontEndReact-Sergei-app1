@@ -22,12 +22,13 @@ import "./styles.css";
 //   );
 // }
 
-function Button({ name, type = "button", onClick }) {
-  
-  const buttonClass = name === "Delete" ? "delete-button" : "main-button";
-
+function Button({ name, type = "button", buttonClass, onClick }) {
   return (
-    <button className={`button-component ${buttonClass}`} type={type}>
+    <button
+      className={`button-component ${buttonClass}`}
+      type={type}
+      onClick={onClick}
+    >
       {name}
     </button>
   );
