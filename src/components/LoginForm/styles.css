@@ -1,10 +1,11 @@
 .login-form {
   display: flex;
   flex-direction: column;
-  gap: 27px;
-  padding: 55px;
+  gap: 30px;
+  padding: 60px;
   width: 590px;
-  height: 450px;
+  min-height: 450px;
+  max-height: fit-content;
   border: 1px solid #000000;
   border-radius: 4px;
 }
@@ -18,7 +19,7 @@
 .inputs-fields-wrapper {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 20px;
   flex: 1;
   width: 100%;
 }
