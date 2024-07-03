@@ -31,7 +31,7 @@ function LoginForm() {
           id="password-input"
         />
       </div>
-      <Button onClick={login} name="Login" type="submit" />
+      <Button onClick={login} name="Login" type="submit" buttonClass={"main-button"}/>
       {/* <button
         className="button-click"
         type="button"

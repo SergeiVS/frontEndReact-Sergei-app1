@@ -28,7 +28,7 @@ function Counter() {
       </div>
       <p className="count">{count}</p>
       <div className="button-control">
-        <Button name="+" onClick={onPlus} />
+        <Button name="+" onClick={onPlus} buttonClass={"main"} />
       </div>
     </div>
   );
