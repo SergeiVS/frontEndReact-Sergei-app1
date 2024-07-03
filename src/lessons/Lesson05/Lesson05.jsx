@@ -27,11 +27,25 @@ function Lesson05() {
     </li>
   ));
 
+  const buttonElements = buttonNames.map((name) => {
+    return (
+      <div key={v4()} className="button-control">
+        <Button
+          name={name}
+          onClick={() => {
+            addProducts(name);
+          }}
+        />
+      </div>
+    );
+  });
+
   return (
     <div className="lesson-wrappers">
       <h1>Menu</h1>
       <div className="button-container">
-        <div className="button-control">
+        {buttonElements}
+        {/* <div className="button-control">
           <Button
             name={buttonNames[0]}
             onClick={() => addProducts(buttonNames[0])}
@@ -48,8 +62,8 @@ function Lesson05() {
             name={buttonNames[2]}
             onClick={() => addProducts(buttonNames[2])}
           />
-        </div>
-        <div className="button-control">
+        </div> */}
+        {/* <div className="button-control">
           <Button
             name={buttonNames[3]}
             onClick={() => addProducts(buttonNames[3])}
@@ -66,11 +80,11 @@ function Lesson05() {
             name={buttonNames[5]}
             onClick={() => addProducts(buttonNames[5])}
           />
-        </div>
+        </div> */}
       </div>
       <div className="order-list-container">
         <h2>Order list</h2>
-        <ul>{orderList}</ul>
+        <ol>{orderList}</ol>
       </div>
     </div>
   );

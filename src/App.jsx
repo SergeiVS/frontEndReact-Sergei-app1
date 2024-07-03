@@ -4,7 +4,7 @@ import "./App.css";
 // import Lesson02 from "./lessons/Lesson02/Lesson02";
 // import Lesson03 from "./lessons/Lesson03/Lesson03";
 // import Lesson04 from "./lessons/Lesson04/Lesson04";
-// import Lesson05 from "./lessons/Lesson05/Lesson05";
+import Lesson05 from "./lessons/Lesson05/Lesson05";
 
 //Homeworks
 // import Homework02 from "./homeworks/homework02/Homework02";
@@ -20,11 +20,11 @@ function App() {
       {/* <Lesson02 /> */}
       {/* <Lesson03 /> */}
       {/* <Lesson04 /> */}
+      <Lesson05 />
       {/* <Consultation01 /> */}
       {/* <Homework02/> */}
       {/* <Homework03 /> */}
-      <Homework04 />
-      {/* <Lesson05 /> */}
+      {/*<Homework04 />*/}
     </div>
   );
 }
