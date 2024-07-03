@@ -3,7 +3,7 @@ import Counter from "../../components/Counter/Counter";
 
 function Lesson04() {
   return (
-    <div className="Lesson-wrapper">
+    <div className="lesson-wrapper">
       <Counter />
     </div>
   );

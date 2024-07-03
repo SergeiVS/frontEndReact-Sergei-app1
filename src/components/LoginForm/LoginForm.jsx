@@ -6,6 +6,7 @@ import Input from "../Input/Input";
 
 //функция возвращающая форму входа
 function LoginForm() {
+  
   const login = (event) => {
     event.preventDefault();
     console.log("User logged in succesfully");
@@ -30,16 +31,16 @@ function LoginForm() {
           id="password-input"
         />
       </div>
-      <Button onClick={login} name="Login" type="submit" />
+      <Button onClick={login} name="Login" type="submit" buttonClass={"main-button"}/>
       {/* <button
         className="button-click"
         type="button"
         onClick={(event) => {
-          clickOnMe(event, "some Attribute");
+          clickOnMe(event, ()=>{sonsole.log("it works")});
         }}
       >
         click me!!!
-      </button> */}
+       </button> */}
     </form>
   );
 }
